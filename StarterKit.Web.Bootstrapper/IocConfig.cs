@@ -13,7 +13,7 @@
 
             builder.RegisterControllers(Assembly.Load("StarterKit.Web"));
 
-            builder.RegisterModule<BusModule>();
+            builder.RegisterModule<AzureServiceBusModule>();
 
             builder.RegisterModule<RequestClientModule>();
 

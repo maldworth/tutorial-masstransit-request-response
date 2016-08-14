@@ -12,7 +12,7 @@
 
             builder.RegisterType<MyService>();
 
-            builder.RegisterModule(new BusModule(Assembly.GetExecutingAssembly()));
+            builder.RegisterModule(new AzureServiceBusModule(Assembly.GetExecutingAssembly()));
 
             return builder.Build();
         }
